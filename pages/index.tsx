@@ -1,7 +1,12 @@
 // imports
 import Head from "next/head";
 import { BsFillMoonStarsFill } from "react-icons/bs";
-import { AiOutlineTwitter, AiFillLinkedin, AiFillGithub,AiOutlineMail } from "react-icons/ai";
+import {
+  AiOutlineTwitter,
+  AiFillLinkedin,
+  AiFillGithub,
+  AiOutlineMail,
+} from "react-icons/ai";
 // images
 import Image from "next/image";
 import p2 from "../public/p2.png";
@@ -16,8 +21,8 @@ import driv from "../public/driv.png";
 import bagRush from "../public/bagRush.png";
 import sos from "../public/sos.png";
 import yaka from "../public/yaka.png";
-import mental from "../public/mental.png"; 
-import shome from "../public/shome.png";// Add the image for Bag Rush game
+import mental from "../public/mental.png";
+import shome from "../public/shome.png"; // Add the image for Bag Rush game
 // hooks
 import { useState } from "react";
 
@@ -38,7 +43,7 @@ export default function Home() {
 
       <main className="font-poppins bg-white px-10 md:px-20 lg:px-40 dark:bg-black">
         <section className="min-h-screen">
-          <nav className="py-10 mb12 flex justify-between">
+          <nav className="py-10 mb-12 flex justify-between">
             <h1 className=" text-xl dark:text-white"></h1>
             <ul className="flex items-center">
               <li>
@@ -49,7 +54,8 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  href="https://drive.google.com/file/d/1q3jPHd8ZfnLtYUD66JWnlDefhIvYTspp/view?usp=drive_link" target="_blank"
+                  href="https://drive.google.com/file/d/1q3jPHd8ZfnLtYUD66JWnlDefhIvYTspp/view?usp=drive_link"
+                  target="_blank"
                   className=" bg-purple-600 text-white px-4 py-2 border-none rounded-md "
                 >
                   Resume
@@ -71,6 +77,7 @@ export default function Home() {
               teamwork and tackling challenges with a positive outlook.
             </p>
           </div>
+
           {/* social media */}
           <div className="text-5xl flex justify-center gap-16 text-gray-600">
             <a
@@ -82,15 +89,17 @@ export default function Home() {
             <a href="https://github.com/Kavishathejan" target="_blank">
               <AiFillGithub />
             </a>
-            <a href="mailto:kavishadulanjanastc@gmail.com" target="_blank" rel="noopener noreferrer">
-  <AiOutlineMail />
-</a>
-
+            <a
+              href="mailto:kavishadulanjanastc@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <AiOutlineMail />
+            </a>
           </div>
+
           {/* profile image */}
-          <div
-            className=" m-auto relative bg-gradient-to-b from-purple-200 w-80 p-5 h-80 mt-20 rounded-full o"
-          >
+          <div className=" m-auto relative bg-gradient-to-b from-purple-200 w-80 p-5 h-80 mt-20 rounded-full o">
             <Image src={p2} alt="profile" layout="fill" objectFit="cover" />
           </div>
         </section>
@@ -152,14 +161,14 @@ export default function Home() {
               </h4>
               <p className=" text-gray-400 text-sm">Laravel</p>
               <p className=" text-gray-400 text-sm">HTML/CSS</p>
-              <p className=" text-gray-400 text-sm">python/Java/C++</p>
-              <p className=" text-gray-400 text-sm">Javascript/Bootstrap</p>
+              <p className=" text-gray-400 text-sm">Python/Java/C++</p>
+              <p className=" text-gray-400 text-sm">JavaScript/Bootstrap</p>
             </div>
           </div>
         </section>
 
-                {/* Project portfolio */}
-                <section>
+        {/* Project portfolio */}
+        <section>
           <div>
             <h3 className=" text-3xl py-5 font-bold opacity-60 dark:text-white dark:opacity-100">
               Projects portfolio
@@ -172,15 +181,18 @@ export default function Home() {
               <h3 className=" text-1xl py-5 font-semibold opacity-100 dark:text-white dark:opacity-100">
                 E-Channeling-web
               </h3>
-              <a href="https://github.com/Kavishathejan/E-Channeling-web.git" target="_blank">
-                <div className="w-72 h-72 mx-auto"> {/* Uniform width and height */}
+              <a
+                href="https://github.com/Kavishathejan/E-Channeling-web.git"
+                target="_blank"
+              >
+                <div className="w-72 h-72 mx-auto">
                   <Image
                     src={web1}
                     alt="web images"
                     className="rounded-lg object-cover"
                     layout="responsive"
-                    width={400}   
-                    height={400}  
+                    width={400}
+                    height={400}
                   />
                 </div>
               </a>
@@ -188,15 +200,18 @@ export default function Home() {
               <h3 className=" text-1xl py-5 font-semibold opacity-100 dark:text-white dark:opacity-100">
                 BMI calculator
               </h3>
-              <a href="https://github.com/Kavishathejan/finalpro.git" target="_blank">
-                <div className="w-72 h-72 mx-auto"> {/* Uniform width and height */}
+              <a
+                href="https://github.com/Kavishathejan/finalpro.git"
+                target="_blank"
+              >
+                <div className="w-72 h-72 mx-auto">
                   <Image
                     src={bmi}
                     alt="BMI calculator"
                     className="rounded-lg object-cover"
                     layout="responsive"
-                    width={400}   
-                    height={400}  
+                    width={400}
+                    height={400}
                   />
                 </div>
               </a>
@@ -206,151 +221,61 @@ export default function Home() {
               <h3 className=" text-1xl py-5 font-semibold opacity-100 dark:text-white dark:opacity-100">
                 Vision based driver assist system
               </h3>
-              <a href="https://github.com/Kavishathejan/Vision_based_driver_assist_system.git" target="_blank">
-                <div className="w-72 h-72 mx-auto"> {/* Uniform width and height */}
+              <a
+                href="https://github.com/Kavishathejan/Vision_based_driver_assist_system.git"
+                target="_blank"
+              >
+                <div className="w-72 h-72 mx-auto">
                   <Image
                     src={driv}
-                    alt="Driver assist system"
+                    alt="Driver Assist"
                     className="rounded-lg object-cover"
                     layout="responsive"
-                    width={400}   
-                    height={400}  
+                    width={400}
+                    height={400}
                   />
                 </div>
               </a>
 
               <h3 className=" text-1xl py-5 font-semibold opacity-100 dark:text-white dark:opacity-100">
-                Bag Rush Adventure Game
+                Bag Rush Game
               </h3>
-              <a href="https://www.linkedin.com/posts/nisal-basura-wickramasinghe-06884820b_techchallenge02-unity-gamedevelopment-ugcPost-7210110628202516480-Vgns?utm_source=share&utm_medium=member_desktop" target="_blank">
-                <div className="w-72 h-72 mx-auto"> {/* Uniform width and height */}
+              <a
+                href="https://www.linkedin.com/posts/nisal-basura-wickramasinghe-06884820b_techchallenge02-unity-gamedevelopment-activity-7210111703722655744-dDVw?utm_source=share&utm_medium=member_desktop"
+                target="_blank"
+              >
+                <div className="w-72 h-72 mx-auto">
                   <Image
                     src={web3}
-                    alt="Bag Rush Adventure Game"
+                    alt="Bag Rush Game"
                     className="rounded-lg object-cover"
                     layout="responsive"
-                    width={400}   
-                    height={400}  
+                    width={400}
+                    height={400}
                   />
                 </div>
               </a>
             </div>
 
             <div className="basis-1/3 flex-1">
-              <h3 className=" text-1xl py-5 font-semibold opacity-100 dark:text-white dark:opacity-100 text-center" >
-                Laravel SOS App
+              <h3 className=" text-1xl py-5 font-semibold opacity-100 dark:text-white dark:opacity-100 text-center">
+                Laravel Social Login  application
               </h3>
-              <a href="https://github.com/Kavishathejan/alarms.git" target="_blank">
-                <div className="w-72 h-72 mx-auto"> {/* Uniform width and height */}
+              <a href="https://github.com/Kavishathejan/SOS-app.git" target="_blank">
+                <div className="w-72 h-72 mx-auto">
                   <Image
                     src={sos}
-                    alt="Laravel SOS App"
+                    alt="SOS application"
                     className="rounded-lg object-cover"
                     layout="responsive"
-                    width={40}   
-                    height={40}  
+                    width={400}
+                    height={400}
                   />
                 </div>
               </a>
             </div>
           </div>
         </section>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-
-        {/* Figma UI designs portfolio */}
-        <section>
-          <div>
-            <h3 className=" text-3xl py-5 font-bold opacity-60 dark:text-white dark:opacity-100">
-              Figma UI designs portfolio
-            </h3>
-          </div>
-          <div className="md:flex lg:flex gap-10 mx-auto">
-          <div className="text-center shadow-lg p-5 rounded-xl my-10 dark:bg-gradient-to-b from-purple-600">
-              <a href="https://www.figma.com/design/mMTnSLmI3l3q8PXhBcJtlq/Untitled?node-id=0-1&t=9mN4wt3XgRzW8zya-1"><Image
-                src={yaka}
-                width={300}
-                height={300}
-                alt="web app"
-                className=" inline py-5"
-              />
-              
-              <h4 className="py-4 text-purple-600 text-md font-semibold">
-                Figma
-              </h4>
-              <h4 className="py-4 text-black-600 text-md font-semibold dark:text-white">
-                
-                User interace designs for <br />traditional masks selling app <br /> (mobile)
-              </h4>
-              </a>
-            </div>
-
-            {/* Mobile app development */}
-            <div className="text-center shadow-lg p-5 rounded-xl my-10 dark:bg-gradient-to-b from-purple-600">
-              <a href="https://www.figma.com/design/jiKUeJzcnRf1ox2xEwu38b/FYP?node-id=0-1&t=vGx2O2LSenEcrFrD-1" target="_blank"><Image
-                src={mental}
-                width={300}
-                height={300}
-                alt="mobile app"
-                className=" inline py-5"
-              />
-              <h4 className="py-4 text-purple-600 text-md font-semibold">
-                Figma
-              </h4>
-              
-              <h4 className="py-4 text-black-600 text-md font-semibold dark:text-white">
-                
-                User interace designs for <br />mental health app (mobile)
-              </h4>
-              </a>
-            </div>
-
-            {/* Web development */}
-            <div className="text-center shadow-lg p-5 rounded-xl my-10 dark:bg-gradient-to-b from-purple-600">
-              <a href="https://www.figma.com/design/IchfP3O9QoxZtqzbGutO7G/Untitled?node-id=0-1&t=36XUF0dfM4bPWG7L-1"><Image
-                src={shome}
-                width={300}
-                height={300}
-                alt="web app"
-                className=" inline py-5"
-              />
-              
-              <h4 className="py-4 text-purple-600 text-md font-semibold">
-                Figma
-              
-              </h4>
-              <h4 className="py-4 text-black-600 text-md font-semibold dark:text-white">
-                
-                User interace designs for <br />SmartHome (desktop,mobile,tablet)
-              </h4>
-              </a>
-            </div>
-          </div>
-
-          
-        </section>
-        <section>
-        <h4 className="py-4 text-black-600 text-md font- text-center dark:text-white">
-        © 2024 Kavisha Thejan Kahandugoda 
-        All Rights Reserved
-              
-              </h4>
-              
-        </section>
-
       </main>
     </div>
   );
