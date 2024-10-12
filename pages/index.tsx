@@ -67,7 +67,7 @@ export default function Home() {
               UI/UX designer and Full-stack developer
             </h3>
             <p className=" text-sm py-2 text-gray-400 leading-6 md:text-md max-w-xl mx-auto">
-              An accountable and motivated 4th-year undergraduate, adept at
+              An accountable and motivated 4th-year undergraduate adept at
               teamwork and tackling challenges with a positive outlook.
             </p>
           </div>
@@ -334,7 +334,7 @@ export default function Home() {
               </h4>
               <h4 className="py-4 text-black-600 text-md font-semibold dark:text-white">
                 
-                User interace designs for <br />SmartHome (desktop,mobile,tablet)
+                User interace designs for <br />SmartHome (desktop/mobile/tablet)
               </h4>
               </a>
             </div>
