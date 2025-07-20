@@ -1,14 +1,14 @@
 // imports
 import Head from "next/head";
 import { BsFillMoonStarsFill } from "react-icons/bs";
-import { AiOutlineTwitter, AiFillLinkedin, AiFillGithub,AiOutlineMail } from "react-icons/ai";
+import { AiOutlineTwitter, AiFillLinkedin, AiFillGithub, AiOutlineMail } from "react-icons/ai";
 // images
 import Image from "next/image";
 import p2 from "../public/p2.png";
 import design from "../public/design.png";
 import lara from "../public/lara.png";
 import code from "../public/code.png";
-import web1 from "../public/web1.svg";
+import web1 from "../public/web1.png";
 import web2 from "../public/web2.png";
 import web3 from "../public/web3.png";
 import bmi from "../public/bmi.png";
@@ -16,8 +16,17 @@ import driv from "../public/driv.png";
 import bagRush from "../public/bagRush.png";
 import sos from "../public/sos.png";
 import yaka from "../public/yaka.png";
-import mental from "../public/mental.png"; 
-import shome from "../public/shome.png";// Add the image for Bag Rush game
+import mental from "../public/mental.png";
+import shome from "../public/shome.png";
+import vscode from "../public/vscode.png";
+import recipe from "../public/recipe.png"
+import movie from "../public/movie.png"
+import todo from "../public/todo.png"
+import ncal from "../public/ncal.png"
+import piano from "../public/piano.png"
+import ech from "../public/ech.png"
+import events from "../public/events.png"
+import student from "../public/student.jpg"// Add the image for Bag Rush game
 // hooks
 import { useState } from "react";
 
@@ -49,7 +58,7 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  href="https://drive.google.com/file/d/1q3jPHd8ZfnLtYUD66JWnlDefhIvYTspp/view?usp=drive_link" target="_blank"  rel="noopener noreferrer"
+                  href="https://drive.google.com/file/d/1eIIv6yHbJYE3sTomRFavFkrWWlVQvQEJ/view?usp=sharing" target="_blank" rel="noopener noreferrer"
                   className=" bg-purple-600 text-white px-4 py-2 border-none rounded-md "
                 >
                   Resume
@@ -64,7 +73,7 @@ export default function Home() {
               Kavisha Kahandugoda
             </h2>
             <h3 className="text-2xl py-4 md:text-xl dark:text-white">
-              UI/UX designer and Full-stack developer
+              Mobile App & Web Developer | Frontend Developer | Full-Stack Developer | UI/UX Designer | WordPress Developer
             </h3>
             <p className=" text-sm py-2 text-gray-400 leading-6 md:text-md max-w-xl mx-auto">
               An accountable and motivated 4th-year undergraduate adept at
@@ -75,16 +84,21 @@ export default function Home() {
           <div className="text-5xl flex justify-center gap-16 text-gray-600">
             <a
               href="https://www.linkedin.com/in/kavisha-thejan-8b0825305?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-              target="_blank"  rel="noopener noreferrer"
+              target="_blank" rel="noopener noreferrer"
             >
               <AiFillLinkedin />
             </a>
-            <a href="https://github.com/Kavishathejan" target="_blank"  rel="noopener noreferrer">
+            <a href="https://github.com/Kavishathejan" target="_blank" rel="noopener noreferrer">
               <AiFillGithub />
             </a>
-            <a href="mailto:kavishadulanjanastc@gmail.com" target="_blank" rel="noopener noreferrer"  >
-  <AiOutlineMail />
-</a>
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=kavishadulanjanastc@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <AiOutlineMail />
+            </a>
+
 
           </div>
           {/* profile image */}
@@ -99,7 +113,7 @@ export default function Home() {
         <section>
           <div></div>
           <div className="md:flex lg:flex gap-10 mx-auto">
-            <div className="text-center shadow-lg p-5 rounded-xl my-10 dark:bg-gradient-to-b from-purple-600 ">
+            <div className="text-center shadow-lg p-5 rounded-xl my-10 dark:bg-gradient-to-b from-gray-800 ">
               <Image
                 src={design}
                 width={100}
@@ -113,12 +127,13 @@ export default function Home() {
               <h4 className="py-4 text-purple-600 text-md font-semibold">
                 Design tools
               </h4>
-              <p className=" text-gray-400 text-sm">Photoshop</p>
+              <p className=" text-gray-400 text-sm">Wordpress</p>
               <p className=" text-gray-400 text-sm">Figma</p>
+              <p className=" text-gray-400 text-sm">Photoshop</p>
             </div>
 
             {/* Mobile app development */}
-            <div className="text-center shadow-lg p-5 rounded-xl my-10 dark:bg-gradient-to-b from-purple-600">
+            <div className="text-center shadow-lg p-5 rounded-xl my-10 dark:bg-gradient-to-b from-gray-800">
               <Image
                 src={code}
                 width={100}
@@ -127,16 +142,19 @@ export default function Home() {
                 className=" inline py-5"
               />
               <h3 className="text-2xl font-bold dark:text-white">
-                Mobile application development
+                Mobile application & web development
               </h3>
               <h4 className="py-4 text-purple-600 text-md font-semibold">
                 Developing languages
               </h4>
-              <p className=" text-gray-400 text-sm">Flutter</p>
+              <p className=" text-gray-400 text-sm">Flutter(dart)</p>
+              <p className=" text-gray-400 text-sm">React Native</p>
+              <p className="text-gray-400 text-sm">React.js / Next.js</p>
+              <p className="text-gray-400 text-sm">Tailwind CSS</p>
             </div>
 
             {/* Web development */}
-            <div className="text-center shadow-lg p-5 rounded-xl my-10 dark:bg-gradient-to-b from-purple-600">
+            <div className="text-center shadow-lg p-5 rounded-xl my-10 dark:bg-gradient-to-b from-gray-800">
               <Image
                 src={lara}
                 width={100}
@@ -148,111 +166,287 @@ export default function Home() {
                 Full-stack development
               </h3>
               <h4 className="py-4 text-purple-600 text-md font-semibold">
-                Developing languages
+                Developing languages, Frameworks & Databases
               </h4>
+              <p className=" text-gray-400 text-sm">python/Java/C++</p>
               <p className=" text-gray-400 text-sm">Laravel</p>
               <p className=" text-gray-400 text-sm">HTML/CSS</p>
-              <p className=" text-gray-400 text-sm">python/Java/C++</p>
               <p className=" text-gray-400 text-sm">Javascript/Bootstrap</p>
+              <p className="text-gray-400 text-sm">Node.js / Express.js</p>
+              <p className="text-gray-400 text-sm">MongoDB / MySQL</p>
+              <p className="text-gray-400 text-sm">Firebase</p>
+            </div>
+
+            <div className="text-center shadow-lg p-5 rounded-xl my-10 dark:bg-gradient-to-b from-gray-800">
+              <Image
+                src={vscode}
+                width={100}
+                height={100}
+                alt="web app"
+                className=" inline py-5"
+              />
+              <h3 className="text-2xl font-bold dark:text-white">
+                Tools/Platforms
+              </h3><br></br>
+              <h4 className="py-4 text-purple-600 text-md font-semibold">
+                IDEs and tools
+              </h4>
+
+
+              <p className="text-gray-400 text-sm">Git / GitHub</p>
+              <p className="text-gray-400 text-sm">VS Code / IntelliJ</p>
+              <p className="text-gray-400 text-sm">Postman </p>
+
             </div>
           </div>
         </section>
 
-                {/* Project portfolio */}
-                <section>
+        {/* Project portfolio */}
+        <section>
           <div>
             <h3 className=" text-3xl py-5 font-bold opacity-60 dark:text-white dark:opacity-100">
               Projects portfolio
             </h3>
+
           </div>
 
           {/* images */}
           <div className="flex flex-col gap-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1">
-              <h3 className=" text-1xl py-5 font-semibold opacity-100 dark:text-white dark:opacity-100">
-                E-Channeling-web
-              </h3>
-              <a href="https://github.com/Kavishathejan/E-Channeling-web.git" target="_blank"  rel="noopener noreferrer">
-                <div className="w-72 h-72 mx-auto"> {/* Uniform width and height */}
-                  <Image
-                    src={web1}
-                    alt="web images"
-                    className="rounded-lg object-cover"
-                    layout="responsive"
-                    width={400}   
-                    height={400}  
-                  />
-                </div>
-              </a>
+            <div className="basis-1/3 flex-1 ">
+              <div className="text-center shadow-lg p-5 rounded-xl my-10 dark:bg-gradient-to-b from-gray-900 w-100 h-70">
+                <h3 className=" text-1xl py-5 font-semibold opacity-100 dark:text-white dark:opacity-100">
+                  Final Year Research & Project: AI Based Mobile Application For Mood Disorders Associated With Depression
+                </h3>
+                <h4 className=" text-gray-500 text-sm py-3 font-medium dark:text-white">Flutter(dart),Firebase ,Node.js  </h4>
+                <a href="https://github.com/Kavishathejan/AI-Based-Mobile-Application-and-system-For-Mood-Disorders-Associated-With-Depression.git" target="_blank" rel="noopener noreferrer">
+                  <div className="w-72 h-72 mx-auto">
+                    <Image
+                      src={web1}
+                      alt="Final Year Research"
+                      className="rounded-lg object-cover"
+                      layout="responsive"
+                      width={400}
+                      height={400}
+                    />
+                  </div>
+                </a></div>
 
-              <h3 className=" text-1xl py-5 font-semibold opacity-100 dark:text-white dark:opacity-100">
-                BMI calculator
-              </h3>
-              <a href="https://github.com/Kavishathejan/finalpro.git" target="_blank"  rel="noopener noreferrer">
-                <div className="w-72 h-72 mx-auto"> {/* Uniform width and height */}
-                  <Image
-                    src={bmi}
-                    alt="BMI calculator"
-                    className="rounded-lg object-cover"
-                    layout="responsive"
-                    width={400}   
-                    height={400}  
-                  />
+              <div className="text-center shadow-lg p-5 rounded-xl my-10 dark:bg-gradient-to-b from-gray-900 w-100 h-70">
+                <h3 className=" text-1xl py-5 font-semibold opacity-100 dark:text-white dark:opacity-100">
+                  Movie searching App with TMDB API
+                </h3>
+                <h4 className=" text-gray-500 text-sm py-3 font-medium dark:text-white">Dart,C++, JavaScript,HTML  </h4>
+                <a href="https://github.com/Kavishathejan/Movie_Searching_app_Flutter.git" target="_blank" rel="noopener noreferrer">
+                  <div className="w-72 h-72 mx-auto"> {/* Uniform width and height */}
+                    <Image
+                      src={movie}
+                      alt="Movie searching App with TMDB API"
+                      className="rounded-lg object-cover"
+                      layout="responsive"
+                      width={400}
+                      height={400}
+                    />
+                  </div>
+                </a></div>
+
+
+              <div className="text-center shadow-lg p-5 rounded-xl my-10 dark:bg-gradient-to-b from-gray-900 w-100 h-70">
+                <h3 className=" text-1xl py-5 font-semibold opacity-100 dark:text-white dark:opacity-100">
+                  BMI calculator
+                </h3>
+                <h4 className=" text-gray-500 text-sm py-3 font-medium dark:text-white">Dart,C++, JavaScript,HTML  </h4>
+                <a href="https://github.com/Kavishathejan/finalpro.git" target="_blank" rel="noopener noreferrer">
+                  <div className="w-72 h-72 mx-auto"> {/* Uniform width and height */}
+                    <Image
+                      src={bmi}
+                      alt="BMI calculator"
+                      className="rounded-lg object-cover"
+                      layout="responsive"
+                      width={400}
+                      height={400}
+                    />
+                  </div>
+                </a></div>
+
+              <div className="text-center shadow-lg p-5 rounded-xl my-10 dark:bg-gradient-to-b from-gray-900 w-100 h-70">
+                <h3 className=" text-1xl py-5 font-semibold opacity-100 dark:text-white dark:opacity-100">
+                  ToDo App - Angular , Firebase
+                </h3>
+                <h4 className=" text-gray-500 text-sm py-3 font-medium dark:text-white">Angular (Framework), typescript , HTML, CSS</h4>
+                <a href="https://github.com/Kavishathejan/ToDo-App---Angular-Firebase.git" target="_blank" rel="noopener noreferrer">
+                  <div className="w-72 h-72 mx-auto"> {/* Uniform width and height */}
+                    <Image
+                      src={todo}
+                      alt="ToDo App"
+                      className="rounded-lg object-cover"
+                      layout="responsive"
+                      width={400}
+                      height={400}
+                    />
+                  </div>
+                </a></div>
+
+              <div className="text-center shadow-lg p-5 rounded-xl my-10 dark:bg-gradient-to-b from-gray-900 w-100 h-70">
+                <h3 className=" text-1xl py-5 font-semibold opacity-100 dark:text-white dark:opacity-100">
+                  Digital Piano App
+                </h3>
+                <h4 className=" text-gray-500 text-sm py-3 font-medium dark:text-white">HTML, CSS , JavaScript</h4>
+
+                <a href="https://github.com/Kavishathejan/digital-piano-app.git" target="_blank" rel="noopener noreferrer">
+                  <div className="w-72 h-72 mx-auto"> {/* Uniform width and height */}
+                    <Image
+                      src={piano}
+                      alt="Digital Piano App"
+                      className="rounded-lg object-cover"
+                      layout="responsive"
+                      width={200}
+                      height={200}
+                    />
+                  </div>
+                </a></div>
+              
+              <div className="basis-1/3 flex-1">
+                <div className="text-center shadow-lg p-5 rounded-xl my-10 dark:bg-gradient-to-b from-gray-900 w-100 h-70">
+                  <h3 className=" text-1xl py-5 font-semibold opacity-100 dark:text-white dark:opacity-100 " >
+                    Movie-Explorer - React.js
+                  </h3>
+                  <h4 className=" text-gray-500 text-sm py-3 font-medium dark:text-white">HTML, CSS , JavaScript</h4>
+                  <a href="https://github.com/Kavishathejan/Movie-Explorer_React.git" target="_blank" rel="noopener noreferrer">
+                    <div className="w-72 h-72 mx-auto"> {/* Uniform width and height */}
+                      <Image
+                        src={sos}
+                        alt="Movie-Explorer"
+                        className="rounded-lg object-cover"
+                        layout="responsive"
+                        width={40}
+                        height={40}
+                      />
+                    </div>
+                  </a>
                 </div>
-              </a>
+
+              </div>
             </div>
 
-            <div className="basis-1/3 flex-1">
-              <h3 className=" text-1xl py-5 font-semibold opacity-100 dark:text-white dark:opacity-100">
-                Vision based driver assist system
-              </h3>
-              <a href="https://github.com/Kavishathejan/Vision_based_driver_assist_system.git" target="_blank" rel="noopener noreferrer">
-                <div className="w-72 h-72 mx-auto"> {/* Uniform width and height */}
-                  <Image
-                    src={driv}
-                    alt="Driver assist system"
-                    className="rounded-lg object-cover"
-                    layout="responsive"
-                    width={400}   
-                    height={400}  
-                  />
-                </div>
-              </a>
-
-              <h3 className=" text-1xl py-5 font-semibold opacity-100 dark:text-white dark:opacity-100">
-                Bag Rush Adventure Game
-              </h3>
-              <a href="https://www.linkedin.com/posts/nisal-basura-wickramasinghe-06884820b_techchallenge02-unity-gamedevelopment-ugcPost-7210110628202516480-Vgns?utm_source=share&utm_medium=member_desktop" target="_blank"  rel="noopener noreferrer">
-                <div className="w-72 h-72 mx-auto"> {/* Uniform width and height */}
-                  <Image
-                    src={web3}
-                    alt="Bag Rush Adventure Game"
-                    className="rounded-lg object-cover"
-                    layout="responsive"
-                    width={400}   
-                    height={400}  
-                  />
-                </div>
-              </a>
-            </div>
 
             <div className="basis-1/3 flex-1">
-              <h3 className=" text-1xl py-5 font-semibold opacity-100 dark:text-white dark:opacity-100 text-center" >
-                Laravel SOS App
+
+              <div className="text-center shadow-lg p-5 rounded-xl my-10 dark:bg-gradient-to-b from-gray-900 w-100 h-100">
+                <h3 className=" text-1xl py-5 font-semibold opacity-100 dark:text-white dark:opacity-100">
+                  Traditional Food Recipes app with Flutter and MongoDB Compass - Categorized recipes and suggest youtube videos
+                </h3>
+                <h4 className=" text-gray-500 text-sm py-3 font-medium dark:text-white">Flutter(Dart) , HTML , JavaScript, MongoDB compass , Node.js</h4>
+                <a href="https://github.com/Kavishathejan/Traditional-Recipes-App.git" target="_blank" rel="noopener noreferrer">
+                  <div className="w-72 h-72 mx-auto"> {/* Uniform width and height */}
+                    <Image
+                      src={recipe}
+                      alt="Recipes App"
+                      className="rounded-lg object-cover"
+                      layout="responsive"
+                      width={400}
+                      height={400}
+                    />
+                  </div>
+                </a></div>
+
+
+              <div className="text-center shadow-lg p-5 rounded-xl my-10 dark:bg-gradient-to-b from-gray-900 w-100 h-70"> <h3 className=" text-1xl py-5 font-semibold opacity-100 dark:text-white dark:opacity-100">
+                .NET project - Student Management System
               </h3>
-              <a href="https://github.com/Kavishathejan/alarms.git" target="_blank" rel="noopener noreferrer">
-                <div className="w-72 h-72 mx-auto"> {/* Uniform width and height */}
-                  <Image
-                    src={sos}
-                    alt="Laravel SOS App"
-                    className="rounded-lg object-cover"
-                    layout="responsive"
-                    width={40}   
-                    height={40}  
-                  />
-                </div>
-              </a>
+                <h4 className=" text-gray-500 text-sm py-3 font-medium dark:text-white">ASP.NET , HTML,CSS,JavaScript</h4>
+
+                <a href="https://github.com/Kavishathejan/Student-Management-System---ASP.NET.git" target="_blank" rel="noopener noreferrer">
+                  <div className="w-72 h-72 mx-auto"> {/* Uniform width and height */}
+                    <Image
+                      src={student}
+                      alt="Student Management System"
+                      className="rounded-lg object-cover"
+                      layout="responsive"
+                      width={200}
+                      height={200}
+                    />
+                  </div>
+                </a></div>
+
+              <div className="text-center shadow-lg p-5 rounded-xl my-10 dark:bg-gradient-to-b from-gray-900 w-100 h-100">
+                <h3 className=" text-1xl py-5 font-semibold opacity-100 dark:text-white dark:opacity-100">
+                  .NET - Windows Forms Calculator
+                </h3>
+                <h4 className=" text-gray-500 text-sm py-3 font-medium dark:text-white">.NET , C#</h4>
+
+                <a href="https://github.com/Kavishathejan/Windows-Forms-Calculator_.NET.git" target="_blank" rel="noopener noreferrer">
+                  <div className="w-72 h-72 mx-auto"> {/* Uniform width and height */}
+                    <Image
+                      src={ncal}
+                      alt=".NET Cal"
+                      className="rounded-lg object-cover"
+                      layout="responsive"
+                      width={50}
+                      height={50}
+                    />
+                  </div>
+                </a></div>
+
+              <div className="text-center shadow-lg p-5 rounded-xl my-10 dark:bg-gradient-to-b from-gray-900 w-100 h-100">
+                <h3 className=" text-1xl py-5 font-semibold opacity-100 dark:text-white dark:opacity-100">
+                  Vision based driver assist system
+                </h3>
+                <h4 className=" text-gray-500 text-sm py-3 font-medium dark:text-white">HTML , Tex , Python</h4>
+
+                <a href="https://github.com/Kavishathejan/Vision_based_driver_assist_system.git" target="_blank" rel="noopener noreferrer">
+                  <div className="w-72 h-72 mx-auto"> {/* Uniform width and height */}
+                    <Image
+                      src={driv}
+                      alt="Driver assist system"
+                      className="rounded-lg object-cover"
+                      layout="responsive"
+                      width={400}
+                      height={400}
+                    />
+                  </div>
+                </a></div>
+
+              <div className="text-center shadow-lg p-5 rounded-xl my-10 dark:bg-gradient-to-b from-gray-900 w-100 h-100">
+                <h3 className=" text-1xl py-5 font-semibold opacity-100 dark:text-white dark:opacity-100">
+                  Bag Rush Adventure Game
+                </h3>
+                <h4 className=" text-gray-500 text-sm py-3 font-medium dark:text-white">Unity , Vs Code</h4>
+
+                <a href="https://www.linkedin.com/posts/nisal-basura-wickramasinghe-06884820b_techchallenge02-unity-gamedevelopment-ugcPost-7210110628202516480-Vgns?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer">
+                  <div className="w-72 h-72 mx-auto"> {/* Uniform width and height */}
+                    <Image
+                      src={web3}
+                      alt="Bag Rush Adventure Game"
+                      className="rounded-lg object-cover"
+                      layout="responsive"
+                      width={400}
+                      height={400}
+                    />
+                  </div>
+                </a></div>
+
+              <div className="text-center shadow-lg p-5 rounded-xl my-10 dark:bg-gradient-to-b from-gray-900 w-100 h-100">
+                <h3 className=" text-1xl py-5 font-semibold opacity-100 dark:text-white dark:opacity-100">
+                  E-Channeling Website
+                </h3>
+                <h4 className=" text-gray-500 text-sm py-3 font-medium dark:text-white">HTML, CSS , JavaScript, PHP</h4>
+
+                <a href="https://github.com/Kavishathejan/E-Channeling-web.git" target="_blank" rel="noopener noreferrer">
+                  <div className="w-72 h-72 mx-auto"> {/* Uniform width and height */}
+                    <Image
+                      src={ech}
+                      alt="E-Channeling Website"
+                      className="rounded-lg object-cover"
+                      layout="responsive"
+                      width={400}
+                      height={400}
+                    />
+                  </div>
+                </a></div>
+
             </div>
+
+
           </div>
         </section>
         <br />
@@ -262,14 +456,7 @@ export default function Home() {
         <br />
         <br />
         <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+
 
         {/* Figma UI designs portfolio */}
         <section>
@@ -278,77 +465,99 @@ export default function Home() {
               Figma UI designs portfolio
             </h3>
           </div>
+
           <div className="md:flex lg:flex gap-10 mx-auto">
-          <div className="text-center shadow-lg p-5 rounded-xl my-10 dark:bg-gradient-to-b from-purple-600">
-              <a href="https://www.figma.com/design/mMTnSLmI3l3q8PXhBcJtlq/Untitled?node-id=0-1&t=9mN4wt3XgRzW8zya-1"><Image
+            <div className="text-center shadow-lg p-5 rounded-xl my-10 dark:bg-gradient-to-b from-gray-800">
+              <a href="https://www.figma.com/design/GRrgOyziOsseHtNKyxlVYX/event-booking-and-management-app?node-id=9-1886&t=bB39j1SEqch1ksVc-1" target="_blank" rel="noopener noreferrer"><Image
+                src={events}
+
+                width={300}
+                height={300}
+                alt="web app"
+                className=" inline py-5"
+              />
+                <br></br>
+                <br></br>
+                <br></br>
+                <h4 className="py-4 text-purple-600 text-md font-semibold">
+                  Figma
+                </h4>
+                <h4 className="py-4 text-black-600 text-md font-semibold dark:text-white">
+
+                  User interace designs for <br />Events Management web app <br />
+                </h4>
+              </a>
+            </div>
+            <div className="text-center shadow-lg p-5 rounded-xl my-10 dark:bg-gradient-to-b from-gray-800">
+              <a href="https://www.figma.com/design/mMTnSLmI3l3q8PXhBcJtlq/Untitled?node-id=0-1&t=9mN4wt3XgRzW8zya-1" target="_blank" rel="noopener noreferrer"><Image
                 src={yaka}
                 width={300}
                 height={300}
                 alt="web app"
                 className=" inline py-5"
               />
-              
-              <h4 className="py-4 text-purple-600 text-md font-semibold">
-                Figma
-              </h4>
-              <h4 className="py-4 text-black-600 text-md font-semibold dark:text-white">
-                
-                User interace designs for <br />traditional masks selling app <br /> (mobile)
-              </h4>
+
+                <h4 className="py-4 text-purple-600 text-md font-semibold">
+                  Figma
+                </h4>
+                <h4 className="py-4 text-black-600 text-md font-semibold dark:text-white">
+
+                  User interace designs for <br />traditional masks selling app <br /> (mobile)
+                </h4>
               </a>
             </div>
 
             {/* Mobile app development */}
-            <div className="text-center shadow-lg p-5 rounded-xl my-10 dark:bg-gradient-to-b from-purple-600">
-              <a href="https://www.figma.com/design/jiKUeJzcnRf1ox2xEwu38b/FYP?node-id=0-1&t=vGx2O2LSenEcrFrD-1" target="_blank"  rel="noopener noreferrer"><Image
+            <div className="text-center shadow-lg p-5 rounded-xl my-10 dark:bg-gradient-to-b from-gray-800">
+              <a href="https://www.figma.com/design/7pdceie8mwvaCmm5CvMnEq/FYP?node-id=0-1&t=EGXLERxrr32G9Mt7-1" target="_blank" rel="noopener noreferrer"><Image
                 src={mental}
                 width={300}
                 height={300}
                 alt="mobile app"
                 className=" inline py-5"
               />
-              <h4 className="py-4 text-purple-600 text-md font-semibold">
-                Figma
-              </h4>
-              
-              <h4 className="py-4 text-black-600 text-md font-semibold dark:text-white">
-                
-                User interace designs for <br />mental health app (mobile)
-              </h4>
+                <h4 className="py-4 text-purple-600 text-md font-semibold">
+                  Figma
+                </h4>
+
+                <h4 className="py-4 text-black-600 text-md font-semibold dark:text-white">
+
+                  User interace designs for <br />mental health app (mobile)
+                </h4>
               </a>
             </div>
 
             {/* Web development */}
-            <div className="text-center shadow-lg p-5 rounded-xl my-10 dark:bg-gradient-to-b from-purple-600">
-              <a href="https://www.figma.com/design/IchfP3O9QoxZtqzbGutO7G/Untitled?node-id=0-1&t=36XUF0dfM4bPWG7L-1"><Image
+            <div className="text-center shadow-lg p-5 rounded-xl my-10 dark:bg-gradient-to-b from-gray-800">
+              <a href="https://www.figma.com/design/jPOvyBtj3ziwRkU7xi7kBf/Smart-Home?node-id=0-1&t=eF4JA01YkBKv78Sd-1" target="_blank" rel="noopener noreferrer"><Image
                 src={shome}
                 width={300}
                 height={300}
                 alt="web app"
                 className=" inline py-5"
               />
-              
-              <h4 className="py-4 text-purple-600 text-md font-semibold">
-                Figma
-              
-              </h4>
-              <h4 className="py-4 text-black-600 text-md font-semibold dark:text-white">
-                
-                User interace designs for <br />SmartHome (desktop/mobile/tablet)
-              </h4>
+
+                <h4 className="py-4 text-purple-600 text-md font-semibold">
+                  Figma
+
+                </h4>
+                <h4 className="py-4 text-black-600 text-md font-semibold dark:text-white">
+
+                  User interace designs for <br />SmartHome (desktop/mobile/tablet)
+                </h4>
               </a>
             </div>
           </div>
 
-          
+
         </section>
         <section>
-        <h4 className="py-4 text-black-600 text-md font- text-center dark:text-white">
-        © 2024 Kavisha Thejan Kahandugoda 
-        All Rights Reserved
-              
-              </h4>
-              
+          <h4 className="py-4 text-black-600 text-md font- text-center dark:text-white">
+            © 2024 Kavisha Thejan Kahandugoda
+            All Rights Reserved
+
+          </h4>
+
         </section>
 
       </main>
