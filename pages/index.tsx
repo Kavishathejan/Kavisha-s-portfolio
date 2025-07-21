@@ -88,7 +88,7 @@ export default function Home() {
           {/* social media */}
           <div className="text-4xl flex justify-center gap-8 text-gray-600 md:text-5xl md:gap-16">
             <a
-              href="https://www.linkedin.com/in/kavisha-thejan-8b0825305?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              href="https://www.linkedin.com/in/kavisha-thejan-306292376/"
               target="_blank" 
               rel="noopener noreferrer"
             >
