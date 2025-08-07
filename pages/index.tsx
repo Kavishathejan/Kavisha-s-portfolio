@@ -27,6 +27,8 @@ import piano from "../public/piano.png"
 import ech from "../public/ech.png"
 import events from "../public/events.png"
 import student from "../public/student.jpg"
+import task from "../public/task.png"
+import fbclone from "../public/fbclone.png"
 // hooks
 import { useState } from "react";
 
@@ -264,6 +266,54 @@ export default function Home() {
            
 
             {/* Project 3 */}
+            <div className="text-center shadow-lg p-5 rounded-xl my-5 dark:bg-gradient-to-b from-gray-900">
+              <h3 className="text-lg py-3 font-semibold dark:text-white md:text-xl">
+                Task Management App (Laravel & MySQL)
+              </h3>
+              <h4 className="text-gray-500 text-xs py-2 font-medium dark:text-white md:text-sm">
+                Laravel , HTML , CSS , Bootstrap
+              </h4>
+              <a 
+                href="https://github.com/Kavishathejan/Movie_Searching_app_Flutter.git" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <div className="w-full h-48 relative mx-auto md:h-64">
+                  <Image
+                    src={task}
+                    alt="Movie searching App with TMDB API"
+                    className="rounded-lg object-cover"
+                    layout="fill"
+                  />
+                </div>
+              </a>
+            </div>
+
+            <div className="text-center shadow-lg p-5 rounded-xl my-5 dark:bg-gradient-to-b from-gray-900">
+              <h3 className="text-lg py-3 font-semibold dark:text-white md:text-xl">
+                FaceBook App Clone UI with React.js 
+              </h3>
+              <h4 className="text-gray-500 text-xs py-2 font-medium dark:text-white md:text-sm">
+                React.js
+              </h4>
+              <a 
+                href="https://github.com/Kavishathejan/Movie_Searching_app_Flutter.git" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <div className="w-full h-48 relative mx-auto md:h-64">
+                  <Image
+                    src={fbclone}
+                    alt="Movie searching App with TMDB API"
+                    className="rounded-lg object-cover"
+                    layout="fill"
+                  />
+                </div>
+              </a>
+            </div>
+
+
+
              <div className="text-center shadow-lg p-5 rounded-xl my-5 dark:bg-gradient-to-b from-gray-900">
               <h3 className="text-lg py-3 font-semibold dark:text-white md:text-xl">
                 Movie searching App with TMDB API
