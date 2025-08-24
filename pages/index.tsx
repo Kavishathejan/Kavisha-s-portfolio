@@ -29,6 +29,7 @@ import events from "../public/events.png"
 import student from "../public/student.jpg"
 import task from "../public/task.png"
 import fbclone from "../public/fbclone.png"
+import hotelr from "../public/hotelr.png"
 // hooks
 import { useState } from "react";
 
@@ -266,6 +267,30 @@ export default function Home() {
            
 
             {/* Project 3 */}
+            <div className="text-center shadow-lg p-5 rounded-xl my-5 dark:bg-gradient-to-b from-gray-900">
+              <h3 className="text-lg py-3 font-semibold dark:text-white md:text-xl">
+                Hotel Rooms Management System With Laravel
+              </h3>
+              <h4 className="text-gray-500 text-xs py-2 font-medium dark:text-white md:text-sm">
+                Laravel , HTML , CSS , Bootstrap
+              </h4>
+              <a 
+                href="https://github.com/Kavishathejan/Hotel-Rooms-Management-System-With-Laravel-" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <div className="w-full h-48 relative mx-auto md:h-64">
+                  <Image
+                    src={hotelr}
+                    alt="Movie searching App with TMDB API"
+                    className="rounded-lg object-cover"
+                    layout="fill"
+                  />
+                </div>
+              </a>
+            </div>
+
+
             <div className="text-center shadow-lg p-5 rounded-xl my-5 dark:bg-gradient-to-b from-gray-900">
               <h3 className="text-lg py-3 font-semibold dark:text-white md:text-xl">
                 Task Management App (Laravel & MySQL)
