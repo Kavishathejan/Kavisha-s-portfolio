@@ -30,6 +30,7 @@ import student from "../public/student.jpg"
 import task from "../public/task.png"
 import fbclone from "../public/fbclone.png"
 import hotelr from "../public/hotelr.png"
+import mbook from "../public/mbook.jpg"
 // hooks
 import { useState } from "react";
 
@@ -244,19 +245,19 @@ export default function Home() {
             {/* Project 2 */}
             <div className="text-center shadow-lg p-5 rounded-xl my-5 dark:bg-gradient-to-b from-gray-900">
               <h3 className="text-lg py-3 font-semibold dark:text-white md:text-xl">
-                Traditional Food Recipes app with Flutter and MongoDB Compass
+                Movie Tickets Booking app 
               </h3>
               <h4 className="text-gray-500 text-xs py-2 font-medium dark:text-white md:text-sm">
-                Flutter(Dart) , HTML , JavaScript, MongoDB compass , Node.js
+                Flutter(Dart) , Firebase
               </h4>
               <a 
-                href="https://github.com/Kavishathejan/Traditional-Recipes-App.git" 
+                href="https://github.com/Kavishathejan/Flutter-Firebase-Mobile-Application-for-Booking-Movie-Tickets" 
                 target="_blank" 
                 rel="noopener noreferrer"
               >
                 <div className="w-full h-48 relative mx-auto md:h-64">
                   <Image
-                    src={recipe}
+                    src={mbook}
                     alt="Recipes App"
                     className="rounded-lg object-cover"
                     layout="fill"
@@ -264,6 +265,9 @@ export default function Home() {
                 </div>
               </a>
             </div>
+
+
+            
            
 
             {/* Project 3 */}
@@ -283,6 +287,29 @@ export default function Home() {
                   <Image
                     src={hotelr}
                     alt="Movie searching App with TMDB API"
+                    className="rounded-lg object-cover"
+                    layout="fill"
+                  />
+                </div>
+              </a>
+            </div>
+
+            <div className="text-center shadow-lg p-5 rounded-xl my-5 dark:bg-gradient-to-b from-gray-900">
+              <h3 className="text-lg py-3 font-semibold dark:text-white md:text-xl">
+                Traditional Food Recipes app with Flutter and MongoDB Compass
+              </h3>
+              <h4 className="text-gray-500 text-xs py-2 font-medium dark:text-white md:text-sm">
+                Flutter(Dart) , HTML , JavaScript, MongoDB compass , Node.js
+              </h4>
+              <a 
+                href="https://github.com/Kavishathejan/Traditional-Recipes-App.git" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <div className="w-full h-48 relative mx-auto md:h-64">
+                  <Image
+                    src={recipe}
+                    alt="Recipes App"
                     className="rounded-lg object-cover"
                     layout="fill"
                   />
