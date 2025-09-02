@@ -65,8 +65,8 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  href="https://drive.google.com/drive/folders/1bRPqBuA19WhOGqDHcEptZJvy9ukgNGlT?usp=sharing" 
-                  target="_blank" 
+                  href="https://drive.google.com/drive/folders/1bRPqBuA19WhOGqDHcEptZJvy9ukgNGlT?usp=sharing"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="bg-purple-600 text-white px-4 py-2 border-none rounded-md text-sm md:text-base"
                 >
@@ -89,19 +89,19 @@ export default function Home() {
               teamwork and tackling challenges with a positive outlook.
             </p>
           </div>
-          
+
           {/* social media */}
           <div className="text-4xl flex justify-center gap-8 text-gray-600 md:text-5xl md:gap-16">
             <a
               href="https://www.linkedin.com/in/kavisha-thejan-306292376/"
-              target="_blank" 
+              target="_blank"
               rel="noopener noreferrer"
             >
               <AiFillLinkedin />
             </a>
-            <a 
-              href="https://github.com/Kavishathejan" 
-              target="_blank" 
+            <a
+              href="https://github.com/Kavishathejan"
+              target="_blank"
               rel="noopener noreferrer"
             >
               <AiFillGithub />
@@ -114,7 +114,7 @@ export default function Home() {
               <AiOutlineMail />
             </a>
           </div>
-          
+
           {/* profile image */}
           <div className="mx-auto relative bg-gradient-to-b from-purple-200 w-64 h-64 p-5 mt-20 rounded-full md:w-80 md:h-80">
             <Image src={p2} alt="profile" layout="fill" objectFit="cover" className="rounded-full" />
@@ -228,9 +228,9 @@ export default function Home() {
               <h4 className="text-gray-500 text-xs py-2 font-medium dark:text-white md:text-sm">
                 Flutter(dart),Firebase ,Node.js
               </h4>
-              <a 
-                href="https://github.com/Kavishathejan/AI-Based-Mobile-Application-and-system-For-Mood-Disorders-Associated-With-Depression.git" 
-                target="_blank" 
+              <a
+                href="https://github.com/Kavishathejan/AI-Based-Mobile-Application-and-system-For-Mood-Disorders-Associated-With-Depression.git"
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <div className="w-full h-48 relative mx-auto md:h-64">
@@ -247,23 +247,25 @@ export default function Home() {
             {/* Project 2 */}
             <div className="text-center shadow-lg p-5 rounded-xl my-5 dark:bg-gradient-to-b from-gray-900">
               <h3 className="text-lg py-3 font-semibold dark:text-white md:text-xl">
-                Movie Tickets Booking app 
+                Movie Tickets Booking app
               </h3>
               <h4 className="text-gray-500 text-xs py-2 font-medium dark:text-white md:text-sm">
                 Flutter(Dart) , Firebase
               </h4>
-              <a 
-                href="https://github.com/Kavishathejan/Flutter-Firebase-Mobile-Application-for-Booking-Movie-Tickets" 
-                target="_blank" 
+              <a
+                href="https://github.com/Kavishathejan/Flutter-Firebase-Mobile-Application-for-Booking-Movie-Tickets"
+                target="_blank"
                 rel="noopener noreferrer"
               >
-                <div className="w-full h-64 relative mx-auto md:h-80 flex items-center justify-center">
+                <div className="w-full h-48 sm:h-64 md:h-80 relative mx-auto overflow-hidden">
                   <Image
                     src={mbook}
                     alt="Recipes App"
-                    className="rounded-lg"
-                    width={180}
-                    height={200}   
+                    fill
+                    className="rounded-lg object-contain"
+                    sizes="(max-width: 640px) 100vw, 
+                             (max-width: 768px) 80vw, 
+                                50vw"
                   />
                 </div>
               </a>
@@ -274,28 +276,30 @@ export default function Home() {
                 NEWS App For SRI LANKA
               </h3>
               <h4 className="text-gray-500 text-xs py-2 font-medium dark:text-white md:text-sm">
-                Flutter(Dart) , Firebase , Rest API 
+                Flutter(Dart) , Firebase , Rest API
               </h4>
-              <a 
-                href="https://github.com/Kavishathejan/Flutter---Sri-Lanka-News-App-" 
-                target="_blank" 
+              <a
+                href="https://github.com/Kavishathejan/Flutter---Sri-Lanka-News-App-"
+                target="_blank"
                 rel="noopener noreferrer"
               >
-                <div className="w-full h-64 relative mx-auto md:h-80 flex items-center justify-center">
+                <div className="w-full h-48 sm:h-64 md:h-80 relative mx-auto overflow-hidden">
                   <Image
                     src={news}
                     alt="Recipes App"
-                    className="rounded-lg"
-                    width={180}
-                    height={200}   
+                    fill
+                    className="rounded-lg object-contain"
+                    sizes="(max-width: 640px) 100vw, 
+                             (max-width: 768px) 80vw, 
+                                50vw"
                   />
                 </div>
               </a>
             </div>
 
 
-            
-           
+
+
 
             {/* Project 3 */}
             <div className="text-center shadow-lg p-5 rounded-xl my-5 dark:bg-gradient-to-b from-gray-900">
@@ -305,9 +309,9 @@ export default function Home() {
               <h4 className="text-gray-500 text-xs py-2 font-medium dark:text-white md:text-sm">
                 Laravel , HTML , CSS , Bootstrap
               </h4>
-              <a 
-                href="https://github.com/Kavishathejan/Hotel-Rooms-Management-System-With-Laravel-" 
-                target="_blank" 
+              <a
+                href="https://github.com/Kavishathejan/Hotel-Rooms-Management-System-With-Laravel-"
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <div className="w-full h-48 relative mx-auto md:h-64">
@@ -328,9 +332,9 @@ export default function Home() {
               <h4 className="text-gray-500 text-xs py-2 font-medium dark:text-white md:text-sm">
                 Flutter(Dart) , HTML , JavaScript, MongoDB compass , Node.js
               </h4>
-              <a 
-                href="https://github.com/Kavishathejan/Traditional-Recipes-App.git" 
-                target="_blank" 
+              <a
+                href="https://github.com/Kavishathejan/Traditional-Recipes-App.git"
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <div className="w-full h-48 relative mx-auto md:h-64">
@@ -352,9 +356,9 @@ export default function Home() {
               <h4 className="text-gray-500 text-xs py-2 font-medium dark:text-white md:text-sm">
                 Laravel , HTML , CSS , Bootstrap
               </h4>
-              <a 
-                href="https://github.com/Kavishathejan/Movie_Searching_app_Flutter.git" 
-                target="_blank" 
+              <a
+                href="https://github.com/Kavishathejan/Movie_Searching_app_Flutter.git"
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <div className="w-full h-48 relative mx-auto md:h-64">
@@ -370,14 +374,14 @@ export default function Home() {
 
             <div className="text-center shadow-lg p-5 rounded-xl my-5 dark:bg-gradient-to-b from-gray-900">
               <h3 className="text-lg py-3 font-semibold dark:text-white md:text-xl">
-                FaceBook App Clone UI with React.js 
+                FaceBook App Clone UI with React.js
               </h3>
               <h4 className="text-gray-500 text-xs py-2 font-medium dark:text-white md:text-sm">
                 React.js
               </h4>
-              <a 
-                href="https://github.com/Kavishathejan/Movie_Searching_app_Flutter.git" 
-                target="_blank" 
+              <a
+                href="https://github.com/Kavishathejan/Movie_Searching_app_Flutter.git"
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <div className="w-full h-48 relative mx-auto md:h-64">
@@ -393,16 +397,16 @@ export default function Home() {
 
 
 
-             <div className="text-center shadow-lg p-5 rounded-xl my-5 dark:bg-gradient-to-b from-gray-900">
+            <div className="text-center shadow-lg p-5 rounded-xl my-5 dark:bg-gradient-to-b from-gray-900">
               <h3 className="text-lg py-3 font-semibold dark:text-white md:text-xl">
                 Movie searching App with TMDB API
               </h3>
               <h4 className="text-gray-500 text-xs py-2 font-medium dark:text-white md:text-sm">
                 Dart,C++, JavaScript,HTML
               </h4>
-              <a 
-                href="https://github.com/Kavishathejan/Movie_Searching_app_Flutter.git" 
-                target="_blank" 
+              <a
+                href="https://github.com/Kavishathejan/Movie_Searching_app_Flutter.git"
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <div className="w-full h-48 relative mx-auto md:h-64">
@@ -415,7 +419,7 @@ export default function Home() {
                 </div>
               </a>
             </div>
-            
+
             {/* Project 4 */}
             <div className="text-center shadow-lg p-5 rounded-xl my-5 dark:bg-gradient-to-b from-gray-900">
               <h3 className="text-lg py-3 font-semibold dark:text-white md:text-xl">
@@ -424,9 +428,9 @@ export default function Home() {
               <h4 className="text-gray-500 text-xs py-2 font-medium dark:text-white md:text-sm">
                 ASP.NET , HTML,CSS,JavaScript
               </h4>
-              <a 
-                href="https://github.com/Kavishathejan/Student-Management-System---ASP.NET.git" 
-                target="_blank" 
+              <a
+                href="https://github.com/Kavishathejan/Student-Management-System---ASP.NET.git"
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <div className="w-full h-48 relative mx-auto md:h-64">
@@ -440,7 +444,7 @@ export default function Home() {
               </a>
             </div>
 
-            
+
 
             {/* Project 5 */}<div className="text-center shadow-lg p-5 rounded-xl my-5 dark:bg-gradient-to-b from-gray-900">
               <h3 className="text-lg py-3 font-semibold dark:text-white md:text-xl">
@@ -449,9 +453,9 @@ export default function Home() {
               <h4 className="text-gray-500 text-xs py-2 font-medium dark:text-white md:text-sm">
                 .NET , C#
               </h4>
-              <a 
-                href="https://github.com/Kavishathejan/Windows-Forms-Calculator_.NET.git" 
-                target="_blank" 
+              <a
+                href="https://github.com/Kavishathejan/Windows-Forms-Calculator_.NET.git"
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <div className="w-full h-48 relative mx-auto md:h-64">
@@ -464,7 +468,7 @@ export default function Home() {
                 </div>
               </a>
             </div>
-            
+
             {/* Project 6 */}
             <div className="text-center shadow-lg p-5 rounded-xl my-5 dark:bg-gradient-to-b from-gray-900">
               <h3 className="text-lg py-3 font-semibold dark:text-white md:text-xl">
@@ -473,9 +477,9 @@ export default function Home() {
               <h4 className="text-gray-500 text-xs py-2 font-medium dark:text-white md:text-sm">
                 HTML, CSS , JavaScript
               </h4>
-              <a 
-                href="https://github.com/Kavishathejan/digital-piano-app.git" 
-                target="_blank" 
+              <a
+                href="https://github.com/Kavishathejan/digital-piano-app.git"
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <div className="w-full h-48 relative mx-auto md:h-64">
@@ -489,8 +493,8 @@ export default function Home() {
               </a>
             </div>
 
-            
-            
+
+
             {/* Project 7 */}
             <div className="text-center shadow-lg p-5 rounded-xl my-5 dark:bg-gradient-to-b from-gray-900">
               <h3 className="text-lg py-3 font-semibold dark:text-white md:text-xl">
@@ -499,9 +503,9 @@ export default function Home() {
               <h4 className="text-gray-500 text-xs py-2 font-medium dark:text-white md:text-sm">
                 HTML, CSS , JavaScript
               </h4>
-              <a 
-                href="https://github.com/Kavishathejan/Movie-Explorer_React.git" 
-                target="_blank" 
+              <a
+                href="https://github.com/Kavishathejan/Movie-Explorer_React.git"
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <div className="w-full h-48 relative mx-auto md:h-64">
@@ -524,9 +528,9 @@ export default function Home() {
               <h4 className="text-gray-500 text-xs py-2 font-medium dark:text-white md:text-sm">
                 HTML , Tex , Python
               </h4>
-              <a 
-                href="https://github.com/Kavishathejan/Vision_based_driver_assist_system.git" 
-                target="_blank" 
+              <a
+                href="https://github.com/Kavishathejan/Vision_based_driver_assist_system.git"
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <div className="w-full h-48 relative mx-auto md:h-64">
@@ -539,7 +543,7 @@ export default function Home() {
                 </div>
               </a>
             </div>
-            
+
             {/* Project 9 */}
             <div className="text-center shadow-lg p-5 rounded-xl my-5 dark:bg-gradient-to-b from-gray-900">
               <h3 className="text-lg py-3 font-semibold dark:text-white md:text-xl">
@@ -548,9 +552,9 @@ export default function Home() {
               <h4 className="text-gray-500 text-xs py-2 font-medium dark:text-white md:text-sm">
                 Angular (Framework), typescript , HTML, CSS
               </h4>
-              <a 
-                href="https://github.com/Kavishathejan/ToDo-App---Angular-Firebase.git" 
-                target="_blank" 
+              <a
+                href="https://github.com/Kavishathejan/ToDo-App---Angular-Firebase.git"
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <div className="w-full h-48 relative mx-auto md:h-64">
@@ -565,16 +569,16 @@ export default function Home() {
             </div>
 
             {/* Project 10 */}
-           <div className="text-center shadow-lg p-5 rounded-xl my-5 dark:bg-gradient-to-b from-gray-900">
+            <div className="text-center shadow-lg p-5 rounded-xl my-5 dark:bg-gradient-to-b from-gray-900">
               <h3 className="text-lg py-3 font-semibold dark:text-white md:text-xl">
                 BMI calculator
               </h3>
               <h4 className="text-gray-500 text-xs py-2 font-medium dark:text-white md:text-sm">
                 Dart,C++, JavaScript,HTML
               </h4>
-              <a 
-                href="https://github.com/Kavishathejan/finalpro.git" 
-                target="_blank" 
+              <a
+                href="https://github.com/Kavishathejan/finalpro.git"
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <div className="w-full h-48 relative mx-auto md:h-64">
@@ -596,9 +600,9 @@ export default function Home() {
               <h4 className="text-gray-500 text-xs py-2 font-medium dark:text-white md:text-sm">
                 Unity , Vs Code
               </h4>
-              <a 
-                href="https://www.linkedin.com/posts/nisal-basura-wickramasinghe-06884820b_techchallenge02-unity-gamedevelopment-ugcPost-7210110628202516480-Vgns?utm_source=share&utm_medium=member_desktop" 
-                target="_blank" 
+              <a
+                href="https://www.linkedin.com/posts/nisal-basura-wickramasinghe-06884820b_techchallenge02-unity-gamedevelopment-ugcPost-7210110628202516480-Vgns?utm_source=share&utm_medium=member_desktop"
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <div className="w-full h-48 relative mx-auto md:h-64">
@@ -620,9 +624,9 @@ export default function Home() {
               <h4 className="text-gray-500 text-xs py-2 font-medium dark:text-white md:text-sm">
                 HTML, CSS , JavaScript, PHP
               </h4>
-              <a 
-                href="https://github.com/Kavishathejan/E-Channeling-web.git" 
-                target="_blank" 
+              <a
+                href="https://github.com/Kavishathejan/E-Channeling-web.git"
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <div className="w-full h-48 relative mx-auto md:h-64">
@@ -648,15 +652,15 @@ export default function Home() {
 
           <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4">
             <div className="text-center shadow-lg p-5 rounded-xl my-5 dark:bg-gradient-to-b from-gray-800">
-              <a 
-                href="https://www.figma.com/design/GRrgOyziOsseHtNKyxlVYX/event-booking-and-management-app?node-id=9-1886&t=bB39j1SEqch1ksVc-1" 
-                target="_blank" 
+              <a
+                href="https://www.figma.com/design/GRrgOyziOsseHtNKyxlVYX/event-booking-and-management-app?node-id=9-1886&t=bB39j1SEqch1ksVc-1"
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <div className="w-50 h-80 relative mx-auto">
                   <Image
                     src={events}
-                    
+
                     alt="Events Management web app"
                     className="rounded-lg object-cover"
                     layout="fill"
@@ -672,9 +676,9 @@ export default function Home() {
             </div>
 
             <div className="text-center shadow-lg p-5 rounded-xl my-5 dark:bg-gradient-to-b from-gray-800">
-              <a 
-                href="https://www.figma.com/design/mMTnSLmI3l3q8PXhBcJtlq/Untitled?node-id=0-1&t=9mN4wt3XgRzW8zya-1" 
-                target="_blank" 
+              <a
+                href="https://www.figma.com/design/mMTnSLmI3l3q8PXhBcJtlq/Untitled?node-id=0-1&t=9mN4wt3XgRzW8zya-1"
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <div className="w-25 h-80 relative mx-auto">
@@ -695,9 +699,9 @@ export default function Home() {
             </div>
 
             <div className="text-center shadow-lg p-5 rounded-xl my-5 dark:bg-gradient-to-b from-gray-800">
-              <a 
-                href="https://www.figma.com/design/7pdceie8mwvaCmm5CvMnEq/FYP?node-id=0-1&t=EGXLERxrr32G9Mt7-1" 
-                target="_blank" 
+              <a
+                href="https://www.figma.com/design/7pdceie8mwvaCmm5CvMnEq/FYP?node-id=0-1&t=EGXLERxrr32G9Mt7-1"
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <div className="w-25 h-80 relative mx-auto">
@@ -718,9 +722,9 @@ export default function Home() {
             </div>
 
             <div className="text-center shadow-lg p-5 rounded-xl my-5 dark:bg-gradient-to-b from-gray-800">
-              <a 
-                href="https://www.figma.com/design/jPOvyBtj3ziwRkU7xi7kBf/Smart-Home?node-id=0-1&t=eF4JA01YkBKv78Sd-1" 
-                target="_blank" 
+              <a
+                href="https://www.figma.com/design/jPOvyBtj3ziwRkU7xi7kBf/Smart-Home?node-id=0-1&t=eF4JA01YkBKv78Sd-1"
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <div className="w-25 h-80 relative mx-auto">
