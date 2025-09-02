@@ -31,6 +31,7 @@ import task from "../public/task.png"
 import fbclone from "../public/fbclone.png"
 import hotelr from "../public/hotelr.png"
 import mbook from "../public/mbook.jpg"
+import news from "../public/news.jpg"
 // hooks
 import { useState } from "react";
 
@@ -137,9 +138,9 @@ export default function Home() {
               <h4 className="py-4 text-purple-600 text-sm font-semibold md:text-md">
                 Design tools
               </h4>
-              <p className="text-gray-400 text-xs md:text-sm">Wordpress</p>
               <p className="text-gray-400 text-xs md:text-sm">Figma</p>
               <p className="text-gray-400 text-xs md:text-sm">Photoshop</p>
+              <p className="text-gray-400 text-xs md:text-sm">Adobe Lightroom</p>
             </div>
 
             {/* Mobile app development */}
@@ -159,6 +160,7 @@ export default function Home() {
               </h4>
               <p className="text-gray-400 text-xs md:text-sm">Flutter(dart)</p>
               <p className="text-gray-400 text-xs md:text-sm">React Native</p>
+              <p className="text-gray-400 text-xs md:text-sm">Wordpress</p>
               <p className="text-gray-400 text-xs md:text-sm">React.js / Next.js</p>
               <p className="text-gray-400 text-xs md:text-sm">Tailwind CSS</p>
             </div>
@@ -255,12 +257,37 @@ export default function Home() {
                 target="_blank" 
                 rel="noopener noreferrer"
               >
-                <div className="w-full h-48 relative mx-auto md:h-64">
+                <div className="w-full h-64 relative mx-auto md:h-80 flex items-center justify-center">
                   <Image
                     src={mbook}
                     alt="Recipes App"
-                    className="rounded-lg object-cover"
-                    layout="fill"
+                    className="rounded-lg"
+                    width={180}
+                    height={200}   
+                  />
+                </div>
+              </a>
+            </div>
+
+            <div className="text-center shadow-lg p-5 rounded-xl my-5 dark:bg-gradient-to-b from-gray-900">
+              <h3 className="text-lg py-3 font-semibold dark:text-white md:text-xl">
+                NEWS App For SRI LANKA
+              </h3>
+              <h4 className="text-gray-500 text-xs py-2 font-medium dark:text-white md:text-sm">
+                Flutter(Dart) , Firebase , Rest API 
+              </h4>
+              <a 
+                href="https://github.com/Kavishathejan/Flutter---Sri-Lanka-News-App-" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <div className="w-full h-64 relative mx-auto md:h-80 flex items-center justify-center">
+                  <Image
+                    src={news}
+                    alt="Recipes App"
+                    className="rounded-lg"
+                    width={180}
+                    height={200}   
                   />
                 </div>
               </a>
