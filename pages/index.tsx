@@ -32,8 +32,10 @@ import fbclone from "../public/fbclone.png"
 import hotelr from "../public/hotelr.png"
 import mbook from "../public/mbook.jpg"
 import news from "../public/news.jpg"
+import joy from "../public/joytravel.png"
 // hooks
 import { useState } from "react";
+import ProjectCard from "./ProjectCard";
 
 // application
 export default function Home() {
@@ -219,427 +221,211 @@ export default function Home() {
           </div>
 
           {/* images */}
-          <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Project 1 */}
-            <div className="text-center shadow-lg p-5 rounded-xl my-5 dark:bg-gradient-to-b from-gray-900">
-              <h3 className="text-lg py-3 font-semibold dark:text-white md:text-xl">
-                Final Year Research & Project: AI Based Mobile Application For Mood Disorders Associated With Depression
-              </h3>
-              <h4 className="text-gray-500 text-xs py-2 font-medium dark:text-white md:text-sm">
-                Flutter(dart),Firebase ,Node.js
-              </h4>
-              <a
-                href="https://github.com/Kavishathejan/AI-Based-Mobile-Application-and-system-For-Mood-Disorders-Associated-With-Depression.git"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className="w-full h-48 relative mx-auto md:h-64">
-                  <Image
-                    src={web1}
-                    alt="Final Year Research"
-                    className="rounded-lg object-cover"
-                    layout="fill"
-                  />
-                </div>
-              </a>
-            </div>
+            <ProjectCard
+              title="Final Year Research & Project: AI Based Mobile Application For Mood Disorders Associated With Depression"
+              tech="Flutter(Dart), Firebase, Node.js"
+              img={web1}
+              alt="Final Year Research"
+              hoverLinks={[
+                { label: "View GitHub Repo", url: "https://github.com/Kavishathejan/AI-Based-Mobile-Application-and-system-For-Mood-Disorders-Associated-With-Depression.git" },
+                { label: "View Video", url: "https://lnkd.in/p/gGSa2f75" }
+              ]}
+            />
 
             {/* Project 2 */}
-            <div className="text-center shadow-lg p-5 rounded-xl my-5 dark:bg-gradient-to-b from-gray-900">
-              <h3 className="text-lg py-3 font-semibold dark:text-white md:text-xl">
-                Movie Tickets Booking app
-              </h3>
-              <h4 className="text-gray-500 text-xs py-2 font-medium dark:text-white md:text-sm">
-                Flutter(Dart) , Firebase
-              </h4>
-              <a
-                href="https://github.com/Kavishathejan/Flutter-Firebase-Mobile-Application-for-Booking-Movie-Tickets"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className="w-full h-48 sm:h-64 md:h-80 relative mx-auto overflow-hidden">
-                  <Image
-                    src={mbook}
-                    alt="Recipes App"
-                    fill
-                    className="rounded-lg object-contain"
-                    sizes="(max-width: 640px) 100vw, 
-                             (max-width: 768px) 80vw, 
-                                50vw"
-                  />
-                </div>
-              </a>
-            </div>
-
-            <div className="text-center shadow-lg p-5 rounded-xl my-5 dark:bg-gradient-to-b from-gray-900">
-              <h3 className="text-lg py-3 font-semibold dark:text-white md:text-xl">
-                NEWS App For SRI LANKA
-              </h3>
-              <h4 className="text-gray-500 text-xs py-2 font-medium dark:text-white md:text-sm">
-                Flutter(Dart) , Firebase , Rest API
-              </h4>
-              <a
-                href="https://github.com/Kavishathejan/Flutter---Sri-Lanka-News-App-"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className="w-full h-48 sm:h-64 md:h-80 relative mx-auto overflow-hidden">
-                  <Image
-                    src={news}
-                    alt="Recipes App"
-                    fill
-                    className="rounded-lg object-contain"
-                    sizes="(max-width: 640px) 100vw, 
-                             (max-width: 768px) 80vw, 
-                                50vw"
-                  />
-                </div>
-              </a>
-            </div>
-
-
-
-
+            <ProjectCard
+              title="Movie Tickets Booking app"
+              tech="Flutter(Dart), Firebase"
+              img={mbook}
+              alt="Movie Tickets App"
+              hoverLinks={[
+                { label: "View GitHub Repo", url: "https://github.com/Kavishathejan/Flutter-Firebase-Mobile-Application-for-Booking-Movie-Tickets" },
+                { label: "View Video", url: "https://lnkd.in/p/g7fGh835" }
+              ]}
+            />
 
             {/* Project 3 */}
-            <div className="text-center shadow-lg p-5 rounded-xl my-5 dark:bg-gradient-to-b from-gray-900">
-              <h3 className="text-lg py-3 font-semibold dark:text-white md:text-xl">
-                Hotel Rooms Management System With Laravel
-              </h3>
-              <h4 className="text-gray-500 text-xs py-2 font-medium dark:text-white md:text-sm">
-                Laravel , HTML , CSS , Bootstrap
-              </h4>
-              <a
-                href="https://github.com/Kavishathejan/Hotel-Rooms-Management-System-With-Laravel-"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className="w-full h-48 relative mx-auto md:h-64">
-                  <Image
-                    src={hotelr}
-                    alt="Movie searching App with TMDB API"
-                    className="rounded-lg object-cover"
-                    layout="fill"
-                  />
-                </div>
-              </a>
-            </div>
+            <ProjectCard
+              title="NEWS App For SRI LANKA"
+              tech="Flutter(Dart), Firebase, Rest API"
+              img={news}
+              alt="News App"
+              hoverLinks={[
+                { label: "View GitHub Repo", url: "https://github.com/Kavishathejan/Flutter---Sri-Lanka-News-App-" },
+                { label: "View Video", url: "https://lnkd.in/p/gFd3aduY" }
+              ]}
+            />
 
-            <div className="text-center shadow-lg p-5 rounded-xl my-5 dark:bg-gradient-to-b from-gray-900">
-              <h3 className="text-lg py-3 font-semibold dark:text-white md:text-xl">
-                Traditional Food Recipes app with Flutter and MongoDB Compass
-              </h3>
-              <h4 className="text-gray-500 text-xs py-2 font-medium dark:text-white md:text-sm">
-                Flutter(Dart) , HTML , JavaScript, MongoDB compass , Node.js
-              </h4>
-              <a
-                href="https://github.com/Kavishathejan/Traditional-Recipes-App.git"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className="w-full h-48 relative mx-auto md:h-64">
-                  <Image
-                    src={recipe}
-                    alt="Recipes App"
-                    className="rounded-lg object-cover"
-                    layout="fill"
-                  />
-                </div>
-              </a>
-            </div>
-
-
-            <div className="text-center shadow-lg p-5 rounded-xl my-5 dark:bg-gradient-to-b from-gray-900">
-              <h3 className="text-lg py-3 font-semibold dark:text-white md:text-xl">
-                Task Management App (Laravel & MySQL)
-              </h3>
-              <h4 className="text-gray-500 text-xs py-2 font-medium dark:text-white md:text-sm">
-                Laravel , HTML , CSS , Bootstrap
-              </h4>
-              <a
-                href="https://github.com/Kavishathejan/Movie_Searching_app_Flutter.git"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className="w-full h-48 relative mx-auto md:h-64">
-                  <Image
-                    src={task}
-                    alt="Movie searching App with TMDB API"
-                    className="rounded-lg object-cover"
-                    layout="fill"
-                  />
-                </div>
-              </a>
-            </div>
-
-            <div className="text-center shadow-lg p-5 rounded-xl my-5 dark:bg-gradient-to-b from-gray-900">
-              <h3 className="text-lg py-3 font-semibold dark:text-white md:text-xl">
-                FaceBook App Clone UI with React.js
-              </h3>
-              <h4 className="text-gray-500 text-xs py-2 font-medium dark:text-white md:text-sm">
-                React.js
-              </h4>
-              <a
-                href="https://github.com/Kavishathejan/Movie_Searching_app_Flutter.git"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className="w-full h-48 relative mx-auto md:h-64">
-                  <Image
-                    src={fbclone}
-                    alt="Movie searching App with TMDB API"
-                    className="rounded-lg object-cover"
-                    layout="fill"
-                  />
-                </div>
-              </a>
-            </div>
-
-
-
-            <div className="text-center shadow-lg p-5 rounded-xl my-5 dark:bg-gradient-to-b from-gray-900">
-              <h3 className="text-lg py-3 font-semibold dark:text-white md:text-xl">
-                Movie searching App with TMDB API
-              </h3>
-              <h4 className="text-gray-500 text-xs py-2 font-medium dark:text-white md:text-sm">
-                Dart,C++, JavaScript,HTML
-              </h4>
-              <a
-                href="https://github.com/Kavishathejan/Movie_Searching_app_Flutter.git"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className="w-full h-48 relative mx-auto md:h-64">
-                  <Image
-                    src={movie}
-                    alt="Movie searching App with TMDB API"
-                    className="rounded-lg object-cover"
-                    layout="fill"
-                  />
-                </div>
-              </a>
-            </div>
+            <ProjectCard
+              title="JoyTravel website"
+              tech="React(vite), Laravel, TailwindCSS, MySQL, Phpmyadmin"
+              img={joy}
+              alt="Travel website"
+              hoverLinks={[
+                { label: "View GitHub Repo", url: "https://github.com/Kavishathejan/JoyTravel-website-React-vite-Laravel" },
+                { label: "View Vercel Link", url: "https://joy-travel-frontend-react-vite.vercel.app/" }
+              ]}
+            />
 
             {/* Project 4 */}
-            <div className="text-center shadow-lg p-5 rounded-xl my-5 dark:bg-gradient-to-b from-gray-900">
-              <h3 className="text-lg py-3 font-semibold dark:text-white md:text-xl">
-                .NET project - Student Management System
-              </h3>
-              <h4 className="text-gray-500 text-xs py-2 font-medium dark:text-white md:text-sm">
-                ASP.NET , HTML,CSS,JavaScript
-              </h4>
-              <a
-                href="https://github.com/Kavishathejan/Student-Management-System---ASP.NET.git"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className="w-full h-48 relative mx-auto md:h-64">
-                  <Image
-                    src={student}
-                    alt="Student Management System"
-                    className="rounded-lg object-cover"
-                    layout="fill"
-                  />
-                </div>
-              </a>
-            </div>
+            <ProjectCard
+              title="Hotel Rooms Management System With Laravel"
+              tech="Laravel, HTML, CSS, Bootstrap"
+              img={hotelr}
+              alt="Hotel Management"
+              hoverLinks={[
+                { label: "View GitHub Repo", url: "https://github.com/Kavishathejan/Hotel-Rooms-Management-System-With-Laravel-" },
+                { label: "View Post", url: "https://lnkd.in/p/g9HpAPGM" }
+              ]}
+            />
 
-
-
-            {/* Project 5 */}<div className="text-center shadow-lg p-5 rounded-xl my-5 dark:bg-gradient-to-b from-gray-900">
-              <h3 className="text-lg py-3 font-semibold dark:text-white md:text-xl">
-                .NET - Windows Forms Calculator
-              </h3>
-              <h4 className="text-gray-500 text-xs py-2 font-medium dark:text-white md:text-sm">
-                .NET , C#
-              </h4>
-              <a
-                href="https://github.com/Kavishathejan/Windows-Forms-Calculator_.NET.git"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className="w-full h-48 relative mx-auto md:h-64">
-                  <Image
-                    src={ncal}
-                    alt=".NET Cal"
-                    className="rounded-lg object-cover"
-                    layout="fill"
-                  />
-                </div>
-              </a>
-            </div>
+            {/* Project 5 */}
+            <ProjectCard
+              title="Traditional Food Recipes app with Flutter and MongoDB Compass"
+              tech="Flutter(Dart), HTML, JavaScript, MongoDB Compass, Node.js"
+              img={recipe}
+              alt="Recipes App"
+              hoverLinks={[
+                { label: "View GitHub Repo", url: "https://github.com/Kavishathejan/Traditional-Recipes-App.git" }
+              ]}
+            />
 
             {/* Project 6 */}
-            <div className="text-center shadow-lg p-5 rounded-xl my-5 dark:bg-gradient-to-b from-gray-900">
-              <h3 className="text-lg py-3 font-semibold dark:text-white md:text-xl">
-                Digital Piano App
-              </h3>
-              <h4 className="text-gray-500 text-xs py-2 font-medium dark:text-white md:text-sm">
-                HTML, CSS , JavaScript
-              </h4>
-              <a
-                href="https://github.com/Kavishathejan/digital-piano-app.git"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className="w-full h-48 relative mx-auto md:h-64">
-                  <Image
-                    src={piano}
-                    alt="Digital Piano App"
-                    className="rounded-lg object-cover"
-                    layout="fill"
-                  />
-                </div>
-              </a>
-            </div>
-
-
+            <ProjectCard
+              title="Task Management App (Laravel & MySQL)"
+              tech="Laravel, HTML, CSS, Bootstrap"
+              img={task}
+              alt="Task Management App"
+              hoverLinks={[
+                { label: "View GitHub Repo", url: "https://github.com/Kavishathejan/TaskApp-with-Authentication--Laravel-MySQL" }
+              ]}
+            />
 
             {/* Project 7 */}
-            <div className="text-center shadow-lg p-5 rounded-xl my-5 dark:bg-gradient-to-b from-gray-900">
-              <h3 className="text-lg py-3 font-semibold dark:text-white md:text-xl">
-                Movie-Explorer - React.js
-              </h3>
-              <h4 className="text-gray-500 text-xs py-2 font-medium dark:text-white md:text-sm">
-                HTML, CSS , JavaScript
-              </h4>
-              <a
-                href="https://github.com/Kavishathejan/Movie-Explorer_React.git"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className="w-full h-48 relative mx-auto md:h-64">
-                  <Image
-                    src={sos}
-                    alt="Movie-Explorer"
-                    className="rounded-lg object-cover"
-                    layout="fill"
-                  />
-                </div>
-              </a>
-            </div>
+            <ProjectCard
+              title="FaceBook App Clone UI with React.js"
+              tech="React.js"
+              img={fbclone}
+              alt="Facebook Clone UI"
+              hoverLinks={[
+                { label: "View GitHub Repo", url: "https://github.com/Kavishathejan/Facebook-Clone-App-UI-React-Tutorial-" }
+              ]}
+            />
 
-
-
-            {/* Project 8 */} <div className="text-center shadow-lg p-5 rounded-xl my-5 dark:bg-gradient-to-b from-gray-900">
-              <h3 className="text-lg py-3 font-semibold dark:text-white md:text-xl">
-                Vision based driver assist system
-              </h3>
-              <h4 className="text-gray-500 text-xs py-2 font-medium dark:text-white md:text-sm">
-                HTML , Tex , Python
-              </h4>
-              <a
-                href="https://github.com/Kavishathejan/Vision_based_driver_assist_system.git"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className="w-full h-48 relative mx-auto md:h-64">
-                  <Image
-                    src={driv}
-                    alt="Driver assist system"
-                    className="rounded-lg object-cover"
-                    layout="fill"
-                  />
-                </div>
-              </a>
-            </div>
+            {/* Project 8 */}
+            <ProjectCard
+              title="Movie searching App with TMDB API"
+              tech="Dart, C++, JavaScript, HTML"
+              img={movie}
+              alt="Movie Searching App"
+              hoverLinks={[
+                { label: "View GitHub Repo", url: "https://github.com/Kavishathejan/Movie_Searching_app_Flutter.git" }
+              ]}
+            />
 
             {/* Project 9 */}
-            <div className="text-center shadow-lg p-5 rounded-xl my-5 dark:bg-gradient-to-b from-gray-900">
-              <h3 className="text-lg py-3 font-semibold dark:text-white md:text-xl">
-                ToDo App - Angular , Firebase
-              </h3>
-              <h4 className="text-gray-500 text-xs py-2 font-medium dark:text-white md:text-sm">
-                Angular (Framework), typescript , HTML, CSS
-              </h4>
-              <a
-                href="https://github.com/Kavishathejan/ToDo-App---Angular-Firebase.git"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className="w-full h-48 relative mx-auto md:h-64">
-                  <Image
-                    src={todo}
-                    alt="ToDo App"
-                    className="rounded-lg object-cover"
-                    layout="fill"
-                  />
-                </div>
-              </a>
-            </div>
+            <ProjectCard
+              title=".NET project - Student Management System"
+              tech="ASP.NET, HTML, CSS, JavaScript"
+              img={student}
+              alt="Student Management System"
+              hoverLinks={[
+                { label: "View GitHub Repo", url: "https://github.com/Kavishathejan/Student-Management-System---ASP.NET.git" }
+              ]}
+            />
 
             {/* Project 10 */}
-            <div className="text-center shadow-lg p-5 rounded-xl my-5 dark:bg-gradient-to-b from-gray-900">
-              <h3 className="text-lg py-3 font-semibold dark:text-white md:text-xl">
-                BMI calculator
-              </h3>
-              <h4 className="text-gray-500 text-xs py-2 font-medium dark:text-white md:text-sm">
-                Dart,C++, JavaScript,HTML
-              </h4>
-              <a
-                href="https://github.com/Kavishathejan/finalpro.git"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className="w-full h-48 relative mx-auto md:h-64">
-                  <Image
-                    src={bmi}
-                    alt="BMI calculator"
-                    className="rounded-lg object-cover"
-                    layout="fill"
-                  />
-                </div>
-              </a>
-            </div>
+            <ProjectCard
+              title=".NET - Windows Forms Calculator"
+              tech=".NET, C#"
+              img={ncal}
+              alt="Windows Forms Calculator"
+              hoverLinks={[
+                { label: "View GitHub Repo", url: "https://github.com/Kavishathejan/Windows-Forms-Calculator_.NET.git" }
+              ]}
+            />
 
             {/* Project 11 */}
-            <div className="text-center shadow-lg p-5 rounded-xl my-5 dark:bg-gradient-to-b from-gray-900">
-              <h3 className="text-lg py-3 font-semibold dark:text-white md:text-xl">
-                Bag Rush Adventure Game
-              </h3>
-              <h4 className="text-gray-500 text-xs py-2 font-medium dark:text-white md:text-sm">
-                Unity , Vs Code
-              </h4>
-              <a
-                href="https://www.linkedin.com/posts/nisal-basura-wickramasinghe-06884820b_techchallenge02-unity-gamedevelopment-ugcPost-7210110628202516480-Vgns?utm_source=share&utm_medium=member_desktop"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className="w-full h-48 relative mx-auto md:h-64">
-                  <Image
-                    src={web3}
-                    alt="Bag Rush Adventure Game"
-                    className="rounded-lg object-cover"
-                    layout="fill"
-                  />
-                </div>
-              </a>
-            </div>
+            <ProjectCard
+              title="Digital Piano App"
+              tech="HTML, CSS, JavaScript"
+              img={piano}
+              alt="Digital Piano App"
+              hoverLinks={[
+                { label: "View GitHub Repo", url: "https://github.com/Kavishathejan/digital-piano-app.git" }
+              ]}
+            />
 
             {/* Project 12 */}
-            <div className="text-center shadow-lg p-5 rounded-xl my-5 dark:bg-gradient-to-b from-gray-900">
-              <h3 className="text-lg py-3 font-semibold dark:text-white md:text-xl">
-                E-Channeling Website
-              </h3>
-              <h4 className="text-gray-500 text-xs py-2 font-medium dark:text-white md:text-sm">
-                HTML, CSS , JavaScript, PHP
-              </h4>
-              <a
-                href="https://github.com/Kavishathejan/E-Channeling-web.git"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className="w-full h-48 relative mx-auto md:h-64">
-                  <Image
-                    src={ech}
-                    alt="E-Channeling Website"
-                    className="rounded-lg object-cover"
-                    layout="fill"
-                  />
-                </div>
-              </a>
-            </div>
+            <ProjectCard
+              title="Movie-Explorer - React.js"
+              tech="HTML, CSS, JavaScript"
+              img={sos}
+              alt="Movie Explorer"
+              hoverLinks={[
+                { label: "View GitHub Repo", url: "https://github.com/Kavishathejan/Movie-Explorer_React.git" }
+              ]}
+            />
+
+            {/* Project 13 */}
+            <ProjectCard
+              title="Vision based driver assist system"
+              tech="HTML, Tex, Python"
+              img={driv}
+              alt="Driver Assist System"
+              hoverLinks={[
+                { label: "View GitHub Repo", url: "https://github.com/Kavishathejan/Vision_based_driver_assist_system.git" }
+              ]}
+            />
+
+            {/* Project 14 */}
+            <ProjectCard
+              title="ToDo App - Angular, Firebase"
+              tech="Angular (Framework), TypeScript, HTML, CSS"
+              img={todo}
+              alt="ToDo App"
+              hoverLinks={[
+                { label: "View GitHub Repo", url: "https://github.com/Kavishathejan/ToDo-App---Angular-Firebase.git" }
+              ]}
+            />
+
+            {/* Project 15 */}
+            <ProjectCard
+              title="BMI Calculator"
+              tech="Dart, C++, JavaScript, HTML"
+              img={bmi}
+              alt="BMI Calculator"
+              hoverLinks={[
+                { label: "View GitHub Repo", url: "https://github.com/Kavishathejan/finalpro.git" }
+              ]}
+            />
+
+            {/* Project 16 */}
+            <ProjectCard
+              title="Bag Rush Adventure Game"
+              tech="Unity, VS Code"
+              img={web3}
+              alt="Bag Rush Adventure Game"
+              hoverLinks={[
+                { label: "View GitHub Repo", url: "https://www.linkedin.com/posts/nisal-basura-wickramasinghe-06884820b_techchallenge02-unity-gamedevelopment-ugcPost-7210110628202516480-Vgns?utm_source=share&utm_medium=member_desktop" }
+              ]}
+            />
+
+            {/* Project 17 */}
+            <ProjectCard
+              title="E-Channeling Website"
+              tech="HTML, CSS, JavaScript, PHP"
+              img={ech}
+              alt="E-Channeling Website"
+              hoverLinks={[
+                { label: "View GitHub Repo", url: "https://github.com/Kavishathejan/E-Channeling-web.git" }
+              ]}
+            />
+
           </div>
+
         </section>
 
         {/* Figma UI designs portfolio */}
